@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#time{
+    font-size: 5em;
+}
+
+#heading{
+    margin-top: 1em;
+}
+
+#quote{
+    margin-top: 1em;
+}
+
+#time{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#quote{
+    animation-name: round;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes move {
+    from { transform : translateY(0)}
+    to { transform : translateY(-100px)}
+}
+
+@keyframes round {
+    from { transform : translateY(0)}
+    to { transform : translateY(100px)}
+}
+
+
+
+@media(max-width : 500px){
+
+    body{
+        color: #f5f5f5;
+    }
+    #time{
+        font-size: 3em;
+    }
+
+    #quote{
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+}
